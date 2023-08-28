@@ -1,0 +1,31 @@
+# Baseline
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-16/slurm-15710195.out exp/Discovery/model-a/nodes-16/opera/slurm-16313423.out tasks/baseline_tasks_a_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-128/slurm-15120966.out exp/Discovery/model-a/nodes-128/opera/slurm-15151492.out tasks/baseline_tasks_a_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-1024/slurm-15173085.out exp/Discovery/model-a/nodes-1024/opera/slurm-15173050.out tasks/baseline_tasks_a_1024-multi.pdf
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-16/slurm-15923269.out exp/Discovery/model-i/nodes-16/opera/slurm-15923500.out tasks/baseline_tasks_i_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-128/slurm-15923447.out exp/Discovery/model-i/nodes-128/opera/slurm-15925662.out tasks/baseline_tasks_i_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-1024/slurm-15974940.out exp/Discovery/model-i/nodes-1024/opera/slurm-15995273.out tasks/baseline_tasks_i_1024-multi.pdf
+
+
+# Batch size 1M
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-16/bs_1048576/slurm-15733558.out exp/Discovery/model-a/nodes-16/bs_1048576/opera/slurm-16330297.out tasks/bs1k_tasks_a_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-128/bs_1048576/slurm-15733559.out exp/Discovery/model-a/nodes-128/bs_1048576/opera/slurm-15746493.out tasks/bs1k_tasks_a_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-1024/bs_1048576/slurm-15784460.out exp/Discovery/model-a/nodes-1024/bs_1048576/opera/slurm-15785261.out tasks/bs1k_tasks_a_1024-multi.pdf
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-16/bs_1048576/slurm-15925963.out exp/Discovery/model-i/nodes-16/bs_1048576/opera/slurm-16310753.out tasks/bs1k_tasks_i_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-128/bs_1048576/slurm-15927075.out exp/Discovery/model-i/nodes-128/bs_1048576/opera/slurm-16091053.out tasks/bs1k_tasks_i_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-1024/bs_1048576/slurm-15974941.out exp/Discovery/model-i/nodes-1024/bs_1048576/opera/slurm-15995283.out tasks/bs1k_tasks_i_1024-multi.pdf
+
+
+# Batch size 2M
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-16/bs_2097152/slurm-16113731.out exp/Discovery/model-a/nodes-16/bs_2097152/opera/slurm-16330298.out tasks/bs2k_tasks_a_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-128/bs_2097152/slurm-15761002.out exp/Discovery/model-a/nodes-128/bs_2097152/opera/slurm-16332232.out tasks/bs2k_tasks_a_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-a/nodes-1024/bs_2097152/slurm-15790002.out exp/Discovery/model-a/nodes-1024/bs_2097152/opera/slurm-15895943.out tasks/bs2k_tasks_a_1024-multi.pdf
+
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-16/bs_2097152/slurm-16099952.out exp/Discovery/model-i/nodes-16/bs_2097152/opera/slurm-16311887.out tasks/bs2k_tasks_i_16-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-128/bs_2097152/slurm-16100012.out exp/Discovery/model-i/nodes-128/bs_2097152/opera/slurm-16100598.out tasks/bs2k_tasks_i_128-multi.pdf
+python tasks/plot_task_end_times-multi.py exp/Discovery/model-i/nodes-1024/bs_2097152/slurm-16100015.out exp/Discovery/model-i/nodes-1024/bs_2097152/opera/slurm-16112462.out tasks/bs2k_tasks_i_1024-multi.pdf

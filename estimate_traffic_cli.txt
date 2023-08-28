@@ -1,0 +1,49 @@
+# On Discovery login node, first:
+export OPENBLAS_NUM_THREADS=6
+
+
+# Baseline
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-16/model_a_16_htsim_output 16 > traffic/baseline_model-a-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-128/model_a_128_htsim_output 128 > traffic/baseline_model-a-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-1024/model_a_1024_htsim_output 1024 > traffic/baseline_model-a-traffic-1024.txt
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-16/model_i_16_htsim_output 16 > traffic/model-i-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-128/model_i_128_htsim_output 128 > traffic/model-i-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-1024/model_i_1024_htsim_output 1024 > traffic/model-i-traffic-1024.txt
+
+
+# Batch size 1M
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-16/bs_1048576/model_a_16_htsim_output 16 > traffic/bs1k_model-a-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-128/bs_1048576/model_a_128_htsim_output 128 > traffic/bs1k_model-a-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-1024/bs_1048576/model_a_1024_htsim_output 1024 > traffic/bs1k_model-a-traffic-1024.txt
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-16/bs_1048576/model_i_16_htsim_output 16 > traffic/bs1k_model-i-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-128/bs_1048576/model_i_128_htsim_output 128 > traffic/bs1k_model-i-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-1024/bs_1048576/model_i_1024_htsim_output 1024 > traffic/bs1k_model-i-traffic-1024.txt
+
+
+# Batch size 2M
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-16/bs_2097152/model_a_16_htsim_output 16 > traffic/bs2k_model-a-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-128/bs_2097152/model_a_128_htsim_output 128 > traffic/bs2k_model-a-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-1024/bs_2097152/model_a_1024_htsim_output 1024 > traffic/bs2k_model-a-traffic-1024.txt
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-16/bs_2097152/model_i_16_htsim_output 16 > traffic/bs2k_model-i-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-128/bs_2097152/model_i_128_htsim_output 128 > traffic/bs2k_model-i-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-i/nodes-1024/bs_2097152/model_i_1024_htsim_output 1024 > traffic/bs2k_model-i-traffic-1024.txt
+
+
+# Feature size 40
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-16/embdims_40/model_a_16_htsim_output 16 > traffic/fs40_model-a-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-128/embdims_40/model_a_128_htsim_output 128 > traffic/fs40_model-a-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-1024/embdims_40/model_a_1024_htsim_output 1024 > traffic/fs40_model-a-traffic-1024.txt
+
+
+# Feature size 93
+
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-16/embdims_93/model_a_16_htsim_output 16 > traffic/fs93_model-a-traffic-16.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-128/embdims_93/model_a_128_htsim_output 128 > traffic/fs93_model-a-traffic-128.txt
+python traffic/est_ring_allreduce_traffic.py exp/Discovery/model-a/nodes-1024/embdims_93/model_a_1024_htsim_output 1024 > traffic/fs93_model-a-traffic-1024.txt
