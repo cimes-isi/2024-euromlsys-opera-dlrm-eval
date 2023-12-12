@@ -18,7 +18,7 @@ width = 0.15 # the width of the bars
 multiplier = 0
 
 fig, ax = plt.subplots(layout='constrained')
-fig.set_size_inches(6, 3.5)
+fig.set_size_inches(6, 3)
 
 for attribute, measurement in networks.items():
     offset = width * multiplier

@@ -2,7 +2,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 fig, ax = plt.subplots(1, 1)
-fig.set_size_inches(6, 3.5)
+fig.set_size_inches(6, 3)
 
 ax.set_xlabel('Nodes', fontsize=16)
 ax.set_ylabel('Traffic Proportion', fontsize=16)
