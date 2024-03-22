@@ -1,6 +1,11 @@
 # Opera + DLRM Co-design Evaluation
 
-Prerequisites:
+Evaluation scripts for the paper: "Connor Imes, Andrew Rittenbach, Peng Xie, Dong In D. Kang, John Paul Walters, Stephen P. Crago. Evaluating Deep Learning Recommendation Model Training Scalability with the Dynamic Opera Network. In: The 4th Workshop on Machine Learning and Systems (EuroMLSys). 2024."
+
+For evaluation code and SLURM job scripts, see: https://github.com/usc-isi/STEAM-FlexFlow, branch `2024-euromlsys`.
+
+
+## Prerequisites
 
 * Python 3 (and as always, using a virtual environment is recommended)
 
@@ -8,8 +13,9 @@ Prerequisites:
 pip install -r requirements.txt
 ```
 
-You will also need the SLURM log files from the USC Discovery cluster jobs and the htsim log files produced by those jobs (e.g. drop or symlink in an `exp/Discovery/` directory.
+You will also need the SLURM log files from the USC Discovery cluster jobs and the htsim log files produced by those jobs (e.g. drop or symlink in an `exp/Discovery/` directory).
 Note that the htsim executions for Opera do not produce a separate log file, only the SLURM log.
+Log files are hundreds of GB in total and thus too large to store in this git repository.
 
 
 ## Scripts
