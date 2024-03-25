@@ -1,6 +1,10 @@
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 from matplotlib.ticker import ScalarFormatter
 import numpy as np
+
+mpl.rcParams['pdf.fonttype'] = 42
+mpl.rcParams['ps.fonttype'] = 42
 
 networks = {
 	'FatTree-Ring': [71.60887296, 9.467728123, 2.082297029],

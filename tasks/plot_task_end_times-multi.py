@@ -1,5 +1,9 @@
 import sys
+import matplotlib as mpl
 import matplotlib.pyplot as plt
+
+mpl.rcParams['pdf.fonttype'] = 42
+mpl.rcParams['ps.fonttype'] = 42
 
 if len(sys.argv) < 4:
     print(f"Usage: {sys.argv[0]} ft_slurm_log_file opera_slurm_log_file output_pdf_file")

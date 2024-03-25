@@ -1,5 +1,9 @@
+import matplotlib as mpl
 import matplotlib.pyplot as plt
 import numpy as np
+
+mpl.rcParams['pdf.fonttype'] = 42
+mpl.rcParams['ps.fonttype'] = 42
 
 fig, ax = plt.subplots(1, 1)
 fig.set_size_inches(6, 3)
