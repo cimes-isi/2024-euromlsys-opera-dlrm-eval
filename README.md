@@ -1,6 +1,28 @@
 # Opera + DLRM Co-design Evaluation
 
-Evaluation scripts for the paper: "Connor Imes, Andrew Rittenbach, Peng Xie, Dong In D. Kang, John Paul Walters, Stephen P. Crago. Evaluating Deep Learning Recommendation Model Training Scalability with the Dynamic Opera Network. In: The 4th Workshop on Machine Learning and Systems (EuroMLSys). 2024."
+Evaluation scripts for the paper:
+
+Connor Imes, Andrew Rittenbach, Peng Xie, Dong In D. Kang, John Paul Walters, and Stephen P. Crago. 2024. Evaluating Deep Learning Recommendation Model Training Scalability with the Dynamic Opera Network. In Proceedings of the 4th Workshop on Machine Learning and Systems (EuroMLSys '24). Association for Computing Machinery, New York, NY, USA, 169–175. https://doi.org/10.1145/3642970.3655825
+
+```BibTex
+@inproceedings{OperaDLRM,
+author = {Imes, Connor and Rittenbach, Andrew and Xie, Peng and Kang, Dong In D. and Walters, John Paul and Crago, Stephen P.},
+title = {Evaluating Deep Learning Recommendation Model Training Scalability with the Dynamic Opera Network},
+year = {2024},
+isbn = {9798400705410},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3642970.3655825},
+doi = {10.1145/3642970.3655825},
+abstract = {Deep learning is commonly used to make personalized recommendations to users for a wide variety of activities. However, deep learning recommendation model (DLRM) training is increasingly dominated by all-to-all and many-to-many communication patterns. While there are a wide variety of algorithms to efficiently overlap communication and computation for many collective operations, these patterns are strictly limited by network bottlenecks. We propose co-designing DLRM model training with the recently proposed Opera network, which is designed to avoid multiple network hops using time-varying source-to-destination circuits. Using measurements from state-of-the-art NVIDIA A100 GPUs, we simulate DLRM model training on networks ranging from 16 to 1024 nodes and demonstrate up to 1.79\texttimes{} improvement using Opera compared with equivalent fat-tree networks. We identify important parameters affecting training time and demonstrate that careful co-design is needed to optimize training latency.},
+booktitle = {Proceedings of the 4th Workshop on Machine Learning and Systems},
+pages = {169–175},
+numpages = {7},
+keywords = {deep learning, dynamic networks, machine learning, networks, recommendation models},
+location = {, Athens, Greece, },
+series = {EuroMLSys '24}
+}
+```
 
 For evaluation code and SLURM job scripts, see: https://github.com/usc-isi/STEAM-FlexFlow, branch `2024-euromlsys`.
 
